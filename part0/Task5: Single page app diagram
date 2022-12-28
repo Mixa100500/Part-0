@@ -1,0 +1,22 @@
+title Single page app diagram
+browser-> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server--> browser: HTML-code
+browser-> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server--> browser: main.css
+browser-> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server--> browser: spa.js
+
+browser-> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+note right of browser:
+The script requests data about notes 
+from the server and creates a list of notes.
+end note 
+
+server--> browser: data.json
+
+browser-> server:HTTP GET chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js
+server-> browser: installHook.js
+
+browser-> server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server--> browser: favicon.ico
