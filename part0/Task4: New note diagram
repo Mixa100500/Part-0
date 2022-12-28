@@ -27,6 +27,3 @@ browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 server-->browser: [{content: "hhh", date: "2022-12-27T23:55:30.199Z"}]
 browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
 server-->browser: favicon.ico
-
-note right of browser: Bob thinks about it
-server->browser: Authentication Response
