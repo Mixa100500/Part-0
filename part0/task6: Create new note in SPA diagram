@@ -1,0 +1,8 @@
+title Create new note in SPA diagram
+browser-> server: HTTP POST ttps://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server--> browser: data.json
+
+note right of browser:
+The script requests data about notes 
+from the server and creates a list of notes.
+end note 
